@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<fragment
+    android:id="@+id/map"
+    android:layout_below="@+id/btnBul"
+    android:name="com.google.android.gms.maps.MapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" />
+
+<Button
+android:id="@+id/btnBul"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentTop="true"
+android:layout_alignRight="@+id/map"
+android:onClick="onClick_Building"
+android:text="Library" />
+
+<Button
+android:id="@+id/btnUniv"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignBottom="@+id/btnBul"
+    android:layout_centerHorizontal="true"
+android:onClick="onClick_University"
+android:text="University" />
+
+<Button
+android:id="@+id/btnCity"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignBottom="@+id/btnUniv"
+android:onClick="onClick_City"
+android:text="City" />
+
+</RelativeLayout>
+
